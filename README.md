@@ -1,20 +1,19 @@
 # Brave Origin Policy
 
-Pacote de políticas para aproximar o Brave convencional de uma configuração
-minimalista no estilo Brave Origin.
+A policy package to bring the standard Brave closer to a minimalist, "Brave Origin"-style configuration.
 
-## Perfil
+## Profile
 
-- Privacidade Maximum
-- Brave Sync desativado por política
-- Extensões liberadas
-- Brave Shields mantido
-- Safe Browsing principal mantido
-- Atualizações mantidas
+- Maximum privacy
+- Brave Sync disabled by policy
+- Extensions allowed
+- Brave Shields retained
+- Core Safe Browsing functionality retained
+- Updates enabled
 
 ## Windows 10/11
 
-Abra PowerShell como Administrador:
+Open PowerShell as Administrator:
 
 ```powershell
 Set-ExecutionPolicy -Scope Process Bypass
@@ -22,32 +21,32 @@ cd .\Brave-Origin-Policy\Windows
 .\Install-BraveOriginPolicy.ps1
 ```
 
-Para restaurar:
+To restore:
 
 ```powershell
 .\Restore-BraveOriginPolicy.ps1
 ```
 
-Os backups ficam em:
+The backups are located in:
 
 `%ProgramData%\BraveOriginPolicy`
 
 ## Linux
 
-Instalar:
+Install:
 
 ```bash
 cd Brave-Origin-Policy/Linux
 sudo bash install.sh
 ```
 
-Verificar:
+To check:
 
 ```bash
 bash verify.sh
 ```
 
-Restaurar:
+Restore:
 
 ```bash
 sudo bash restore.sh
@@ -55,22 +54,22 @@ sudo bash restore.sh
 
 ## Verificação geral
 
-Abra:
+Open:
 
 `brave://policy`
 
-Clique em Recarregar políticas e confira os resultados.
+Click on Reload policies and check the results.
 
-## Observações
+## Notes
 
-- Políticas não removem componentes do executável.
-- Algumas políticas dependem da versão e plataforma.
-- Snap e Flatpak podem exigir configuração diferente.
-- SyncDisabled bloqueia o Sync, mas não apaga dados já sincronizados.
-- Telemetria opcional desativada não significa ausência de conexões de rede.
-- Extensões continuam livres para instalação.
-- O pacote não desativa Brave Shields nem seus filtros.
+- Policies do not remove components from the executable.
+- Some policies depend on the version and platform.
+- Snap and Flatpak may require a different configuration.
+- `SyncDisabled` blocks synchronization but does not delete data that has already been synced.
+- Disabling optional telemetry does not mean there will be no network connections.
+- Extensions can still be installed freely.
+- The package does not disable Brave Shields or its filters.
 
-Documentação:
+Documentation:
 https://support.brave.app/hc/en-us/articles/360039248271-Group-Policy
 https://chromeenterprise.google/policies/
