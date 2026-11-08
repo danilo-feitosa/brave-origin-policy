@@ -52,7 +52,7 @@ Restore:
 sudo bash restore.sh
 ```
 
-## Verificação geral
+## General check
 
 Open:
 
